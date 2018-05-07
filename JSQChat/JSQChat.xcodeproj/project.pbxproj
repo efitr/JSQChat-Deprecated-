@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ECA94FA1209C18680084B73B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA94FA0209C18680084B73B /* AppDelegate.swift */; };
-		ECA94FA3209C18680084B73B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA94FA2209C18680084B73B /* ViewController.swift */; };
+		ECA94FA3209C18680084B73B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA94FA2209C18680084B73B /* ChatViewController.swift */; };
 		ECA94FA6209C18680084B73B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA94FA4209C18680084B73B /* Main.storyboard */; };
 		ECA94FA8209C18680084B73B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA94FA7209C18680084B73B /* Assets.xcassets */; };
 		ECA94FAB209C18680084B73B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA94FA9209C18680084B73B /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		ECA94F9D209C18680084B73B /* JSQChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSQChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA94FA0209C18680084B73B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECA94FA2209C18680084B73B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECA94FA2209C18680084B73B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		ECA94FA5209C18680084B73B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECA94FA7209C18680084B73B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECA94FAA209C18680084B73B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				ECA94FA0209C18680084B73B /* AppDelegate.swift */,
-				ECA94FA2209C18680084B73B /* ViewController.swift */,
+				ECA94FA2209C18680084B73B /* ChatViewController.swift */,
 				ECA94FA4209C18680084B73B /* Main.storyboard */,
 				ECA94FA7209C18680084B73B /* Assets.xcassets */,
 				ECA94FA9209C18680084B73B /* LaunchScreen.storyboard */,
@@ -136,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECA94FA3209C18680084B73B /* ViewController.swift in Sources */,
+				ECA94FA3209C18680084B73B /* ChatViewController.swift in Sources */,
 				ECA94FA1209C18680084B73B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

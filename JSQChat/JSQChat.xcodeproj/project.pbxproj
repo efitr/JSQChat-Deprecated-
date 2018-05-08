@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C10153A88DA7995EAFA16694 /* Pods_JSQChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B2F7AA76A1B6D6AFB6D43C /* Pods_JSQChat.framework */; };
+		EC741A3520A0CF7300277A53 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC741A3420A0CF7300277A53 /* Constants.swift */; };
 		ECA94FA1209C18680084B73B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA94FA0209C18680084B73B /* AppDelegate.swift */; };
 		ECA94FA3209C18680084B73B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA94FA2209C18680084B73B /* ChatViewController.swift */; };
 		ECA94FA6209C18680084B73B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA94FA4209C18680084B73B /* Main.storyboard */; };
@@ -15,6 +17,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24B2F7AA76A1B6D6AFB6D43C /* Pods_JSQChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSQChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF13F286B53296218B080EC /* Pods-JSQChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSQChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSQChat/Pods-JSQChat.debug.xcconfig"; sourceTree = "<group>"; };
+		D7AF6CD3DF02F5E26D987C66 /* Pods-JSQChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSQChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSQChat/Pods-JSQChat.release.xcconfig"; sourceTree = "<group>"; };
+		EC741A3220A0C7AD00277A53 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		EC741A3320A0CDC500277A53 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EC741A3420A0CF7300277A53 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ECA94F9D209C18680084B73B /* JSQChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSQChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA94FA0209C18680084B73B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA94FA2209C18680084B73B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C10153A88DA7995EAFA16694 /* Pods_JSQChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		100A741B4E67FDF450E4F56B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CF13F286B53296218B080EC /* Pods-JSQChat.debug.xcconfig */,
+				D7AF6CD3DF02F5E26D987C66 /* Pods-JSQChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8CF01DD38288BCBF55F1DF73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24B2F7AA76A1B6D6AFB6D43C /* Pods_JSQChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ECA94F94209C18680084B73B = {
 			isa = PBXGroup;
 			children = (
 				ECA94F9F209C18680084B73B /* JSQChat */,
 				ECA94F9E209C18680084B73B /* Products */,
+				100A741B4E67FDF450E4F56B /* Pods */,
+				8CF01DD38288BCBF55F1DF73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +82,9 @@
 		ECA94F9F209C18680084B73B /* JSQChat */ = {
 			isa = PBXGroup;
 			children = (
+				EC741A3320A0CDC500277A53 /* GoogleService-Info.plist */,
+				EC741A3220A0C7AD00277A53 /* Bridging-Header.h */,
+				EC741A3420A0CF7300277A53 /* Constants.swift */,
 				ECA94FA0209C18680084B73B /* AppDelegate.swift */,
 				ECA94FA2209C18680084B73B /* ChatViewController.swift */,
 				ECA94FA4209C18680084B73B /* Main.storyboard */,
@@ -71,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECA94FAF209C18680084B73B /* Build configuration list for PBXNativeTarget "JSQChat" */;
 			buildPhases = (
+				10D1DC8A264835129CA59269 /* [CP] Check Pods Manifest.lock */,
 				ECA94F99209C18680084B73B /* Sources */,
 				ECA94F9A209C18680084B73B /* Frameworks */,
 				ECA94F9B209C18680084B73B /* Resources */,
+				FFE5701D9B1E8C67B79392AF /* [CP] Embed Pods Frameworks */,
+				8B01748A6CFF6E0E217F1F2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +165,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10D1DC8A264835129CA59269 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JSQChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B01748A6CFF6E0E217F1F2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSQChat/Pods-JSQChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFE5701D9B1E8C67B79392AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JSQChat/Pods-JSQChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSQChat/Pods-JSQChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ECA94F99209C18680084B73B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +236,7 @@
 			files = (
 				ECA94FA3209C18680084B73B /* ChatViewController.swift in Sources */,
 				ECA94FA1209C18680084B73B /* AppDelegate.swift in Sources */,
+				EC741A3520A0CF7300277A53 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +371,7 @@
 		};
 		ECA94FB0209C18680084B73B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF13F286B53296218B080EC /* Pods-JSQChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -279,6 +379,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.JSQChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +387,7 @@
 		};
 		ECA94FB1209C18680084B73B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7AF6CD3DF02F5E26D987C66 /* Pods-JSQChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,6 +395,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.JSQChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
